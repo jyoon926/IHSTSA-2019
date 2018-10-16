@@ -1,0 +1,145 @@
+$blue: #081FD1;
+$darkBlue: #06136E;
+
+* {
+    margin: 0;
+    padding: 0;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+}
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, p, a, label {
+    font-family: "Helvetica Neue";
+}
+h1 {
+    font-size: 11em;
+    font-weight: 700;
+    line-height: 1;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
+p, a {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.lander {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: calc(100vh - 100px) 100px;
+
+    .main {
+        background: linear-gradient(to bottom right, $blue, $darkBlue);
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+        padding-left: 60px;
+
+        .location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+
+            img {
+                height: 30px;
+                margin-right: 10px;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+        h1 {
+            z-index: 1;
+            margin-bottom: 30px;
+        }
+        .description {
+            opacity: .7;
+            font-weight: 300;
+            margin-bottom: 30px;
+            margin-right: 60px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            color: white;
+            padding-bottom: 4px;
+            margin-bottom: 0;
+            border-bottom: 0px solid white;
+            transition-duration: .2s;
+
+            &:hover {
+                border-bottom: 4px solid white;
+                margin-bottom: -4px;
+            }
+            
+            img {
+                height: 15px;
+                width: 24px;
+                padding-left: 10px;
+            }
+        }
+    }
+    .landerBg {
+        grid-row: 1;
+        grid-column: 2;
+        background-image: url("../img/landerBg.png");
+    }
+    .fundraising {
+        grid-row: 2;
+        grid-column: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            width: calc(60vw - 170px);
+            padding-left: 40.5px;
+            font-weight: 300;
+            b {
+                font-style: italic;
+            }
+        }
+        a {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 50px solid white;
+            border-left: 50px solid white;
+            box-sizing: border-box;
+            background: rgba(7, 31, 211, .2);
+            transition-timing-function: ease out;
+
+            &:hover {
+                border: 0px solid white;
+            }
+
+            img {
+                height: 19px;
+            }
+        }
+    }
+}

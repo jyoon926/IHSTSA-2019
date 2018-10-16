@@ -1,0 +1,32 @@
+.menuIcon {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  height: 23px;
+  width: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menuIcon span {
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
+.menuIcon .line2 {
+  width: 85%;
+}
+
+.menuIcon .line3 {
+  width: 70%;
+}
+/*# sourceMappingURL=menu.css.map */

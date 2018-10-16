@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, p, a, label {
+  font-family: "Helvetica Neue";
+}
+
+h1 {
+  font-size: 11em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+p, a {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.lander {
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: calc(100vh - 100px) 100px;
+      grid-template-rows: calc(100vh - 100px) 100px;
+}
+
+.lander .main {
+  background: -webkit-gradient(linear, left top, right bottom, from(#081FD1), to(#06136E));
+  background: linear-gradient(to bottom right, #081FD1, #06136E);
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.lander .main .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.lander .main .location img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.lander .main .location p {
+  font-weight: bold;
+}
+
+.lander .main h1 {
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.lander .main .description {
+  opacity: .7;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-right: 60px;
+}
+
+.lander .main a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1em;
+  color: white;
+  padding-bottom: 4px;
+  margin-bottom: 0;
+  border-bottom: 0px solid white;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.lander .main a:hover {
+  border-bottom: 4px solid white;
+  margin-bottom: -4px;
+}
+
+.lander .main a img {
+  height: 15px;
+  width: 24px;
+  padding-left: 10px;
+}
+
+.lander .landerBg {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../img/landerBg.png");
+}
+
+.lander .fundraising {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lander .fundraising p {
+  width: calc(60vw - 170px);
+  padding-left: 40.5px;
+  font-weight: 300;
+}
+
+.lander .fundraising p b {
+  font-style: italic;
+}
+
+.lander .fundraising a {
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 50px solid white;
+  border-left: 50px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(7, 31, 211, 0.2);
+  -webkit-transition-timing-function: ease out;
+          transition-timing-function: ease out;
+}
+
+.lander .fundraising a:hover {
+  border: 0px solid white;
+}
+
+.lander .fundraising a img {
+  height: 19px;
+}
+/*# sourceMappingURL=main.css.map */
