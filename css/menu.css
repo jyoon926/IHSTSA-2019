@@ -1,9 +1,12 @@
-.menuIcon {
+.menuButton {
   position: absolute;
   top: 60px;
   left: 60px;
-  height: 23px;
-  width: 33px;
+}
+
+.menuIcon {
+  height: 20px;
+  width: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,6 +17,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 101;
+  padding: 10px;
+  margin: -10px;
 }
 
 .menuIcon span {
@@ -23,10 +29,179 @@
 }
 
 .menuIcon .line2 {
-  width: 85%;
+  width: 80%;
 }
 
 .menuIcon .line3 {
-  width: 70%;
+  width: 60%;
+}
+
+.menuIcon:hover {
+  width: 35px;
+  cursor: pointer;
+}
+
+.menuIcon:hover .line2 {
+  width: 100%;
+}
+
+.menuIcon:hover .line3 {
+  width: 100%;
+}
+
+input {
+  position: absolute;
+  top: -50px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(#071fd3, #020835);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+      grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  -ms-grid-rows: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+      grid-template-rows: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+nav a {
+  color: white;
+  font-size: 2.25em;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0px solid rgba(255, 255, 255, 0.3);
+  background: black;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+nav a:hover {
+  background: none;
+}
+
+nav .link1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+nav .link2 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+nav .link3 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+nav .link4 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 7;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+nav .link5 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 7;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+nav .link6 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 7;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+@media screen and (max-width: 800px) {
+  nav .link1 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  nav .link2 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  nav .link3 {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  nav .link4 {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  nav .link5 {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  nav .link6 {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+  }
+}
+
+.checkbox:checked ~ nav {
+  z-index: 100;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.checkbox:checked ~ .menuButton {
+  position: fixed;
+  z-index: 101;
 }
 /*# sourceMappingURL=menu.css.map */

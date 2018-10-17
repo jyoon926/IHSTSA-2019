@@ -1,5 +1,4 @@
-$blue: #081FD1;
-$darkBlue: #06136E;
+@import "master";
 
 * {
     margin: 0;
@@ -42,7 +41,7 @@ p, a {
     grid-template-rows: calc(100vh - 100px) 100px;
 
     .main {
-        background: linear-gradient(to bottom right, $blue, $darkBlue);
+        background: $blue;
         grid-column-start: 1;
         grid-row-start: 1;
         grid-row-end: 3;
@@ -59,13 +58,12 @@ p, a {
             display: flex;
             align-items: center;
             margin-bottom: 40px;
+            font-weight: 500;
+            font-size: 1.1em;
 
             img {
-                height: 30px;
+                height: 24px;
                 margin-right: 10px;
-            }
-            p {
-                font-weight: bold;
             }
         }
         h1 {
@@ -74,7 +72,7 @@ p, a {
         }
         .description {
             opacity: .7;
-            font-weight: 300;
+            font-weight: 400;
             margin-bottom: 30px;
             margin-right: 60px;
         }
@@ -104,6 +102,8 @@ p, a {
         grid-row: 1;
         grid-column: 2;
         background-image: url("../img/landerBg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .fundraising {
         grid-row: 2;
@@ -141,5 +141,20 @@ p, a {
                 height: 19px;
             }
         }
+    }
+}
+
+.section1 {
+    width: 100%;
+    height: 400px;
+    background: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 10em;
+        font-weight: 800;
+        color: white;
     }
 }

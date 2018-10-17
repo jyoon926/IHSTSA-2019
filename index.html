@@ -10,17 +10,30 @@
     <title>IHSTSA</title>
 </head>
 <body>
+    <header>
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" for="checkbox1" class="menuButton">
+            <div class="menuIcon">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+        </label>
+        <nav>
+            <a class="link1" href="#">Submissions<div class="dot"></div></a>
+            <a class="link2" href="#">Fundraising<div class="dot"></div></a>
+            <a class="link3" href="#">Courses<div class="dot"></div></a>
+            <a class="link4" href="#">Officers<div class="dot"></div></a>
+            <a class="link5" href="#">Advisors<div class="dot"></div></a>
+            <a class="link6" href="#">Works Cited<div class="dot"></div></a>
+        </nav>
+    </header>
     <div class="lander">
-        <div class="menuIcon">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-        </div>
         <section class="main">
             <p class="location"><img src="img/location.svg">Ithaca, NY</p>
             <h1>IHSTSA</h1>
             <p class="description">IHSTSA is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to complete great projects.</p>
-            <a href="#">Learn More<img src="img/whiteArrowRight.svg"></a>
+            <a href="#intro">Learn More<img src="img/whiteArrowRight.svg"></a>
         </section>
         <div class="landerBG"></div>
         <section class="fundraising">
@@ -28,5 +41,11 @@
             <a href="#"><img src="img/blackArrowRight.svg"></a>
         </section>
     </div>
+    <div class="section1" id="intro">
+        <p>Section 1</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
