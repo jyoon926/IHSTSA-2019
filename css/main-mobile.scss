@@ -62,7 +62,7 @@ p, a {
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: calc(100vh - 100px) 100px;
+    grid-template-rows: calc(100vh - 70px) 70px;
 
     .main {
         background-image: url("../img/landerBg.png");
@@ -139,13 +139,13 @@ p, a {
             }
         }
         a {
-            height: 100px;
-            width: 100px;
+            height: 70px;
+            width: 70px;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-right: 50.5px solid white;
-            border-left: 50.5px solid white;
+            border-right: 35.1px solid white;
+            border-left: 35.1px solid white;
             box-sizing: border-box;
             background: rgba(7, 31, 211, .2);
             transition-timing-function: ease out;
@@ -167,7 +167,7 @@ p, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 60px 0;
     flex-direction: column;
 
     .column {
@@ -179,9 +179,9 @@ p, a {
     }
     h2 {
         color: white;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         font-weight: 700;
-        font-size: 4em;
+        font-size: 2.5em;
         text-align: center;
     }
     p {

@@ -82,8 +82,8 @@ p, a {
   display: grid;
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
-  -ms-grid-rows: calc(100vh - 100px) 100px;
-      grid-template-rows: calc(100vh - 100px) 100px;
+  -ms-grid-rows: calc(100vh - 70px) 70px;
+      grid-template-rows: calc(100vh - 70px) 70px;
 }
 
 .lander .main {
@@ -197,8 +197,8 @@ p, a {
 }
 
 .lander .fundraising a {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,8 +208,8 @@ p, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 50.5px solid white;
-  border-left: 50.5px solid white;
+  border-right: 35.1px solid white;
+  border-left: 35.1px solid white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: rgba(7, 31, 211, 0.2);
@@ -238,7 +238,7 @@ p, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 0;
+  padding: 60px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -264,9 +264,9 @@ p, a {
 
 .section1 h2 {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 2.5em;
   text-align: center;
 }
 
