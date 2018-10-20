@@ -117,6 +117,7 @@ p, a {
 }
 
 .lander .main .location {
+  color: white;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;

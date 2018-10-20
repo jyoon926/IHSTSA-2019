@@ -125,6 +125,7 @@ p, a {
   font-weight: 500;
   font-size: 1.1em;
   width: 300px;
+  color: white;
 }
 
 .lander .main .location img {
@@ -157,8 +158,6 @@ p, a {
 }
 
 .lander .main .description em {
-  border-bottom: 1px solid white;
-  padding-bottom: 2px;
   color: white;
   font-style: normal;
 }
