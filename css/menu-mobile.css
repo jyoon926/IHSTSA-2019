@@ -3,9 +3,10 @@ html {
 }
 
 .menuButton {
-  position: absolute;
-  top: 60px;
-  left: 60px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 101;
 }
 
 .menuIcon {
@@ -33,15 +34,15 @@ html {
 }
 
 .menuIcon .line2 {
-  width: 80%;
+  width: 100%;
 }
 
 .menuIcon .line3 {
-  width: 60%;
+  width: 100%;
 }
 
 .menuIcon:hover {
-  width: 35px;
+  width: 28px;
   cursor: pointer;
 }
 
@@ -62,7 +63,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 100;
   opacity: 0;
   height: 100vh;
   width: 100%;
@@ -73,12 +74,16 @@ nav {
       grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
   -ms-grid-rows: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
       grid-template-rows: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transform-origin: 40px 40px;
+          transform-origin: 40px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav a {
@@ -208,4 +213,4 @@ nav .link6 {
   position: fixed;
   z-index: 101;
 }
-/*# sourceMappingURL=menu.css.map */
+/*# sourceMappingURL=menu-mobile.css.map */

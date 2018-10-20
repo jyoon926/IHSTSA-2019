@@ -87,13 +87,15 @@ p, a {
 }
 
 .lander .main {
-  background: -webkit-gradient(linear, left bottom, left top, from(#071fd3), to(#06136E));
-  background: linear-gradient(to top, #071fd3, #06136E);
+  background-image: url("../img/landerBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   -ms-grid-column: 1;
       grid-column-start: 1;
+  grid-column-end: 3;
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 1;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,16 +107,17 @@ p, a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 60px;
+  padding: 0 30px;
 }
 
 .lander .main .location {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +127,7 @@ p, a {
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 1.1em;
+  width: 200px;
 }
 
 .lander .main .location img {
@@ -134,49 +138,34 @@ p, a {
 .lander .main h1 {
   z-index: 1;
   margin-bottom: 30px;
-}
-
-@media screen and (min-height: 800px) {
-  .lander .main h1 {
-    font-size: 15em;
-  }
-}
-
-@media screen and (min-height: 900px) {
-  .lander .main h1 {
-    font-size: 20em;
-  }
+  font-size: 22vw;
 }
 
 .lander .main .description {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 400;
-  margin-bottom: 30px;
-  margin-right: 60px;
+  display: none;
 }
 
-.lander .main .description em {
-  border-bottom: 1px solid white;
-  padding-bottom: 2px;
-  color: white;
-  font-style: normal;
+.lander .main a {
+  z-index: 1;
+  margin: 0;
 }
 
 .lander .landerBg {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  background-image: url("../img/landerBg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100vw;
+  background: #071fd3;
 }
 
 .lander .fundraising {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
   -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column: 2;
-  grid-column: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +182,7 @@ p, a {
 }
 
 .lander .fundraising p {
-  width: calc(60vw - 170px);
+  width: calc(100vw - 170px);
   padding-left: 40.5px;
   font-weight: 300;
 }
@@ -203,6 +192,7 @@ p, a {
 }
 
 .lander .fundraising p em {
+  display: none;
   font-style: normal;
 }
 
@@ -237,7 +227,8 @@ p, a {
 
 .section1 {
   width: 100%;
-  background: #071fd3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#071fd3), to(#06136E));
+  background: linear-gradient(#071fd3, #06136E);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,19 +239,23 @@ p, a {
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section1 .column {
-  width: 33%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -271,12 +266,16 @@ p, a {
   color: white;
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 4em;
+  text-align: center;
 }
 
 .section1 p {
   color: rgba(255, 255, 255, 0.7);
-  width: 80%;
+  width: 90%;
   font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .section1 p strong {
@@ -288,15 +287,21 @@ p, a {
   margin-top: 20px;
 }
 
-.section1 .second {
+.section1 .first {
   display: none;
+}
+
+.section1 .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section1 .large {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1;
-  margin-bottom: 20px;
-  font-size: 3em;
+  margin-bottom: 10px;
+  font-size: 1.5em;
   font-weight: 200;
 }
 
@@ -304,4 +309,4 @@ p, a {
   color: white;
   font-weight: 700;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main-mobile.css.map */
