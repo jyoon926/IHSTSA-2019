@@ -118,12 +118,16 @@ p, a {
             }
         }
     }
-    .landerBg {
-        grid-row: 1;
+    .landerBG {
+        grid-row-start: 1;
         grid-column: 2;
         background-image: url("../img/landerBg.png");
         background-repeat: no-repeat;
         background-size: cover;
+        height: auto;
+        position: inherit;
+        z-index: 0;
+        width: auto;
     }
     .fundraising {
         grid-row: 2;
