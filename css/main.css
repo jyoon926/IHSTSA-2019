@@ -63,10 +63,8 @@ p, a {
 }
 
 .button:hover {
-  background: #06136E;
+  background: rgba(255, 255, 255, 0.2);
   padding: 12px 30px;
-  -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.7);
 }
 
 .button img {
@@ -155,6 +153,7 @@ p, a {
   font-weight: 400;
   margin-bottom: 30px;
   margin-right: 60px;
+  line-height: 1.3;
 }
 
 .lander .main .description em {
@@ -255,7 +254,6 @@ p, a {
 }
 
 .section1 .column {
-  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,6 +267,11 @@ p, a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 33%;
+}
+
+.section1 .column1 {
+  margin: 0 60px;
 }
 
 .section1 h2 {
@@ -279,7 +282,6 @@ p, a {
 
 .section1 p {
   color: rgba(255, 255, 255, 0.7);
-  width: 80%;
   font-weight: 400;
 }
 

@@ -6,9 +6,38 @@ html {
   position: absolute;
   top: 60px;
   left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 101;
 }
 
-.menuIcon {
+.menuButton p {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.menuButton .menuword {
+  opacity: .7;
+  padding-left: 21px;
+}
+
+.menuButton .closeword {
+  opacity: 0;
+  margin-left: -49.22px;
+  padding-left: 0px;
+}
+
+.menuButton .menuIcon {
   height: 20px;
   width: 28px;
   display: -webkit-box;
@@ -26,31 +55,35 @@ html {
   margin: -10px;
 }
 
-.menuIcon span {
+.menuButton .menuIcon span {
   width: 100%;
   height: 2px;
   background: white;
 }
 
-.menuIcon .line2 {
+.menuButton .menuIcon .line2 {
   width: 80%;
 }
 
-.menuIcon .line3 {
+.menuButton .menuIcon .line3 {
   width: 60%;
 }
 
-.menuIcon:hover {
+.menuButton:hover .menuIcon {
   width: 35px;
+}
+
+.menuButton:hover .menuIcon span {
+  width: 100% !important;
+}
+
+.menuButton:hover {
   cursor: pointer;
 }
 
-.menuIcon:hover .line2 {
-  width: 100%;
-}
-
-.menuIcon:hover .line3 {
-  width: 100%;
+.menuButton:hover .menuword {
+  padding-left: 14px;
+  opacity: 1;
 }
 
 input {
@@ -73,8 +106,8 @@ nav {
       grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
   -ms-grid-rows: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
       grid-template-rows: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
   -webkit-transition-duration: .4s;
@@ -206,6 +239,5 @@ nav .link6 {
 
 .checkbox:checked ~ .menuButton {
   position: fixed;
-  z-index: 101;
 }
 /*# sourceMappingURL=menu.css.map */
