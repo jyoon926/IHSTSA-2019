@@ -26,20 +26,9 @@ html {
   line-height: 20px;
 }
 
-.menuButton .menuword {
-  opacity: .7;
-  padding-left: 21px;
-}
-
-.menuButton .closeword {
-  opacity: 0;
-  margin-left: -49.22px;
-  padding-left: 0px;
-}
-
 .menuButton .menuIcon {
-  height: 20px;
-  width: 28px;
+  height: 14px;
+  width: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,8 +40,9 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 101;
-  padding: 10px;
-  margin: -10px;
+  padding: 22px 17px;
+  margin: -8px;
+  border-radius: 32.5px;
 }
 
 .menuButton .menuIcon span {
@@ -61,20 +51,12 @@ html {
   background: white;
 }
 
-.menuButton .menuIcon .line2 {
-  width: 80%;
-}
-
-.menuButton .menuIcon .line3 {
-  width: 60%;
-}
-
 .menuButton:hover .menuIcon {
-  width: 35px;
+  background: white;
 }
 
 .menuButton:hover .menuIcon span {
-  width: 100% !important;
+  background: black;
 }
 
 .menuButton:hover {

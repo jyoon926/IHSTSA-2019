@@ -23,35 +23,17 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 101;
-  padding: 10px;
+  padding: 20px 15px !important;
   margin: -10px;
+  background: white;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .menuIcon span {
   width: 100%;
   height: 2px;
-  background: white;
-}
-
-.menuIcon .line2 {
-  width: 100%;
-}
-
-.menuIcon .line3 {
-  width: 100%;
-}
-
-.menuIcon:hover {
-  width: 28px;
-  cursor: pointer;
-}
-
-.menuIcon:hover .line2 {
-  width: 100%;
-}
-
-.menuIcon:hover .line3 {
-  width: 100%;
+  background: black !important;
 }
 
 input {
@@ -67,7 +49,7 @@ nav {
   opacity: 0;
   height: 100vh;
   width: 100%;
-  background: radial-gradient(#071fd3, #020835);
+  background: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
@@ -84,6 +66,7 @@ nav {
           transform-origin: 40px 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 100px 0;
 }
 
 nav a {

@@ -157,6 +157,7 @@ p, a {
   z-index: 99;
   width: 100vw;
   background: #071fd3;
+  display: none;
 }
 
 .lander .fundraising {
