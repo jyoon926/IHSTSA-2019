@@ -23,7 +23,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 101;
-  padding: 20px 15px !important;
+  padding: 19px 15px !important;
   margin: -10px;
   background: white;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
