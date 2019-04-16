@@ -57,16 +57,17 @@ p, a {
 }
 
 .lander {
-    height: 100vh;
+    height: 500px;
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: calc(100vh - 70px) 70px;
+    grid-template-rows: calc(500px - 70px) 70px;
 
     .main {
-        background-image: url("../img/landerBg.png");
+        background-image: url("../img/dragster_dewitt_dark.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -89,6 +90,7 @@ p, a {
             font-weight: 500;
             font-size: 1.1em;
             width: 300px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 
             img {
                 height: 24px;
@@ -99,6 +101,7 @@ p, a {
             z-index: 1;
             margin-bottom: 30px;
             font-size: 22vw;
+            text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
         }
         .description {
             display: none;
@@ -106,6 +109,7 @@ p, a {
         a {
             z-index: 1;
             margin: 0;
+            text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
         }
     }
     .landerBG {
