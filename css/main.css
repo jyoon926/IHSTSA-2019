@@ -84,6 +84,13 @@ p, a {
       grid-template-rows: calc(100vh - 100px) 100px;
 }
 
+@media only screen and (max-width: 950px) {
+  .lander {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+}
+
 .lander .main {
   background: -webkit-gradient(linear, left bottom, left top, from(#071fd3), to(#06136E));
   background: linear-gradient(to top, #071fd3, #06136E);
@@ -197,6 +204,12 @@ p, a {
   width: calc(60vw - 170px);
   padding-left: 40.5px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 950px) {
+  .lander .fundraising p em {
+    display: none;
+  }
 }
 
 .lander .fundraising p b {
